@@ -137,7 +137,13 @@ REST_FRAMEWORK = {
         # 'daoink_api.authentication.ExpiringTokenAuthentication'
         # 使用jwt认证的设置如下
         # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-    )
+    ),
+    # 配置解析器
+    'DEFAULT_PARSER_CLASSES': ['rest_framework.parsers.JSONParser',
+                               'rest_framework.parsers.FormParser',
+                               'rest_framework.parsers.MultiPartParser',
+                               'rest_framework.parsers.FileUploadParser',
+                               ]
 }
 
 # 设置drf Token过期时间(min)
@@ -149,3 +155,6 @@ REST_FRAMEWORK_TOKEN_EXPIRE_MINUTES = 60
 #     'JWT_EXPIRATION_DELTA': datetime.timedelta(days=365),
 #     'JWT_RESPONSE_PAYLOAD_HANDLER': 'daoink.utils.jwt_response_payload_handler',
 # }
+
+# 定义手机号码正则
+REGEX_MOBILE = "^1[3578]\d{9}$|^147\d{8}$|^176\d{8}$"

@@ -6,7 +6,7 @@ class User(AbstractUser):
     """
     用户
     """
-    tel = models.CharField(max_length=20, null=False, blank=False, unique=True)
+    phone_number = models.CharField(max_length=20, null=False, blank=False, unique=True)
 
 
 class PrintOrder(models.Model):

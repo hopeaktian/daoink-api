@@ -128,3 +128,26 @@ dmypy.json
 .idea
 
 
+将删除 .gitignore
+将删除 README.md
+将删除 daoink/__init__.py
+将删除 daoink/admin.py
+将删除 daoink/apps.py
+将删除 daoink/migrations/0001_initial.py
+将删除 daoink/migrations/0002_auto_20200225_0948.py
+将删除 daoink/migrations/__init__.py
+将删除 daoink/models.py
+将删除 daoink/serializer.py
+将删除 daoink/tests.py
+将删除 daoink/urls.py
+将删除 daoink/utils.py
+将删除 daoink/views.py
+将删除 daoink_api/__init__.py
+将删除 daoink_api/asgi.py
+将删除 daoink_api/authentication.py
+将删除 daoink_api/settings.py
+将删除 daoink_api/urls.py
+将删除 daoink_api/views.py
+将删除 daoink_api/wsgi.py
+将删除 manage.py
+将删除 requirements.txt
